@@ -3,7 +3,6 @@ import React from "react";
 const CoinItem = (props) => {
   return (
     <div className="coin-container">
-    
       <div className="coin-row">
         <ul className="coin">
           <li id="coin-data-first">
@@ -14,10 +13,12 @@ const CoinItem = (props) => {
             <p className="coin-symbol">{props.symbol}</p>
           </li>
           <li>
-            <h4 className="coin-price">{props.price.toLocaleString()}</h4>
+            <h4 className="coin-price">£{props.price.toLocaleString()}</h4>
           </li>
           <li>
-            <p className="coin-marketCap">{props.marketCap.toLocaleString()}</p>
+            <p className="coin-marketCap">
+              £{props.marketCap.toLocaleString()}
+            </p>
           </li>
 
           {props.priceChange > 0 ? (
